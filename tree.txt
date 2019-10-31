@@ -1,0 +1,7 @@
+Hello,1,54
+Bye,7,23 
+Fahreen,13,80 
+Hello,1,54 
+Maah,56,65 
+Abigail,14,76
+Pood,55,90 

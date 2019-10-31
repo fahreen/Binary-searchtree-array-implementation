@@ -1,0 +1,147 @@
+Script started on Fri 16 Nov 2018 06:19:56 PM EST
+bash-4.2$ gcc test.c data.c bst.c 
+bash-4.2$ ./a.out
+(!                       99 )	 9 
+(Once                     1 )	 11 
+(Once                     5 )	 50 
+(Time                     4 )	 44 
+(Upon                    22 )	 2 
+(Vancouver                8 )	 88 
+(a                        3 )	 33 
+(filmed                   6 )	 66 
+(in                       7 )	 77 
+(is                       5 )	 55 
+bash-4.2$ gcc main.c data.c bst.c
+bash-4.2$ ./a.out
+Please enter key, data pair, or E to exit
+ hello,45,44
+Please enter key, data pair, or E to exit
+ bye,66,90
+Please enter key, data pair, or E to exit
+ E
+
+(bye                     66 )	 90 
+(hello                   45 )	 44 
+bash-4.2$ ./a.out < tree.txt
+Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ 
+(Abigail                 14 )	 76 
+(Bye                      7 )	 23 
+(Fahreen                 13 )	 80 
+(Hello                    1 )	 54 
+(Maah                    56 )	 65 
+(Pood                    55 )	 90 
+bash-4.2$ vi main.c
+"main.c" 30L, 706C#include <stdio.h>
+#include "bst.h"
+#include <string.h>
+#include <stdlib.h>
+
+int main(void){char name[100], *token,  str_id[10],  str_data[10] ,  str[100];
+    int id, data;
+    BStree bst;
+    bst = bstree_ini(10);
+    while(1){printf ("Please enter key, data pair, or E to exit\n ");fgets(str, 100, stdin);if ( feof(stdin) | str[0] == 'E')break;strcpy(name, strtok(str, ","));strcpy(str_id, strtok (NULL, ","));strcpy (str_data, strtok ( NULL, ","));id =  atoi (str_id);data =  atoi (str_data);bstree_insert(bst, key_construct(name, id), data);}
+printf("\n");
+if (bst->is_free[1] == '0')
+bstree_traversal(bst);
+bstree_free(bst);
+
+}
+~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               
+
+
+
+
+
+
+    char= bstree_ini(10-- INSERT -));5:wq"main.c" 30L, 705C written
+bash-4.2$ ./a.out < tree.txt
+Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ 
+(Abigail                 14 )	 76 
+(Bye                      7 )	 23 
+(Fahreen                 13 )	 80 
+(Hello                    1 )	 54 
+(Maah                    56 )	 65 
+(Pood                    55 )	 90 
+bash-4.2$ ./a.out < tree.txtgcc main.c data.c bst.c
+bash-4.2$ gcc main.c data.c bst.c./a.out < tree.txt
+Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ 
+Array index out of bounds. The Entry : {(Pood, 55) - 90}  not inserted.
+Please enter key, data pair, or E to exit
+ 
+(Abigail                 14 )	 76 
+(Bye                      7 )	 23 
+(Fahreen                 13 )	 80 
+(Hello                    1 )	 54 
+(Maah                    56 )	 65 
+bash-4.2$ ./a.out < tree.txtgcc main.c data.c bst.c./a.out < tree.txtvi main.c
+"main.c" 30L, 705C#include <stdio.h>
+#include "bst.h"
+#include <string.h>
+#include <stdlib.h>
+
+int main(void){char name[100], *token,  str_id[10],  str_data[10] ,  str[100];
+    int id, data;
+    BStree bst;
+    bst = bstree_ini(5);
+    while(1){printf ("Please enter key, data pair, or E to exit\n ");fgets(str, 100, stdin);if ( feof(stdin) | str[0] == 'E')break;strcpy(name, strtok(str, ","));strcpy(str_id, strtok (NULL, ","));strcpy (str_data, strtok ( NULL, ","));id =  atoi (str_id);data =  atoi (str_data);bstree_insert(bst, key_construct(name, id), data);}
+printf("\n");
+if (bst->is_free[1] == '0')
+bstree_traversal(bst);
+bstree_free(bst);
+
+}
+~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               -- INSERT --i#include <stdio.h>#include <stdio.h>
+
+
+
+
+
+
+
+
+    BStree bs ee_ini();2:wq"main.c" 30L, 705C written
+bash-4.2$ ./a.out < tree.txtgcc main.c data.c bst.c
+bash-4.2$ gcc main.c data.c bst.c./a.out < tree.txt
+Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ 
+Array index out of bounds. The Entry : {(Fahreen, 13) - 80}  not inserted.
+Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ 
+Array index out of bounds. The Entry : {(Abigail, 14) - 76}  not inserted.
+Please enter key, data pair, or E to exit
+ Please enter key, data pair, or E to exit
+ 
+(Bye                      7 )	 23 
+(Hello                    1 )	 54 
+bash-4.2$ exit
+exit
+
+Script done on Fri 16 Nov 2018 06:23:59 PM EST
